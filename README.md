@@ -1,5 +1,6 @@
 # Android-Service-Example
-Android Service Code Example
+Android Service Code Example<br>
+![Sample App](http://i.imgur.com/XDjPKfo.png)
 
 include 4 kinds of sample codes
  - IntentService
