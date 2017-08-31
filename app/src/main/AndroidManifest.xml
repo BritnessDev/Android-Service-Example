@@ -18,14 +18,34 @@
         </activity>
 
         <!-- Activities -->
-        <activity android:name=".BinderServiceActivity" android:label="@string/app_name" />
-        <activity android:name=".MessageBinderActivity" android:label="@string/app_name" />
+        <activity
+                android:name=".BinderServiceActivity"
+                android:label="@string/app_name"/>
+        <activity
+                android:name=".MessageBinderActivity"
+                android:label="@string/app_name"/>
+        <activity
+                android:name=".RemoteControlAIDLActivity"
+                android:label="@string/title_activity_remote_control_aidl" />
 
         <!-- Services -->
-        <service android:name=".LogSenderService" android:exported="false" />
-        <service android:name=".ClassicService" android:exported="false" />
-        <service android:name=".BasicBinderService" android:exported="false" />
-        <service android:name=".MessageBinderService" android:exported="false" />
+        <service
+                android:name=".LogSenderService"
+                android:exported="false"/>
+        <service
+                android:name=".ClassicService"
+                android:exported="false"/>
+        <service
+                android:name=".BasicBinderService"
+                android:exported="false"/>
+        <service
+                android:name=".MessageBinderService"
+                android:exported="false"/>
+        <service
+                android:name=".RemoteServices"
+                android:enabled="true"
+                android:exported="true">
+        </service>
     </application>
 
 </manifest>

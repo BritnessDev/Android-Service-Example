@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button coolLogServiceButton, classicServiceButton;
     private Button openBinderServicesButton, messageBinderServiceButton;
+    private Button aidlButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         openBinderServicesButton.setOnClickListener(this);
         messageBinderServiceButton = (Button) findViewById(R.id.message_binder_service_button);
         messageBinderServiceButton.setOnClickListener(this);
+        aidlButton = (Button) findViewById(R.id.aidl_button);
+        aidlButton.setOnClickListener(this);
     }
 
     //region View.OnClickListener
@@ -50,6 +53,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.message_binder_service_button: {
                 Intent intent = new Intent(this, MessageBinderActivity.class);
+                startActivity(intent);
+            }
+                break;
+            case R.id.aidl_button: {
+                Intent intent = new Intent(this, RemoteControlAIDLActivity.class);
                 startActivity(intent);
             }
                 break;
