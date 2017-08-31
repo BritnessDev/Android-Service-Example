@@ -26,7 +26,7 @@
                 android:label="@string/app_name"/>
         <activity
                 android:name=".RemoteControlAIDLActivity"
-                android:label="@string/title_activity_remote_control_aidl" />
+                android:label="@string/app_name" />
 
         <!-- Services -->
         <service
