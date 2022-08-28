@@ -11,3 +11,4 @@ include 5 kinds of sample codes
    - AIDL (Android Interface Definition Language.)
 
 More information please check [Android Developer](https://developer.android.com/guide/components/services.html)
+Thanks.
